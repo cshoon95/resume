@@ -1,5 +1,6 @@
 import { createAction } from '@reduxjs/toolkit';
 import { StoreStateDataType } from '../types/store';
+import Utils from '../core/Utils';
 
 // types
 const GET_STATE = 'data/GET_STATE';
@@ -16,7 +17,10 @@ export const setState = createAction<{
 
 // state
 export const initialDataState: StoreStateDataType = {
-    
+    sysdate: Utils.sysdate(new Date()),
+    systime: Utils.systime(new Date()),
+    isMobile: Utils.isMobile(),
+    academyName: ''
 }
 
 // reducer
