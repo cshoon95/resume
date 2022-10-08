@@ -1,4 +1,3 @@
-import { setState } from './../store/Data';
 import { Store } from "redux";
 import { initialDataState, setState } from "../store/Data";
 import { hideAlert, showAlert, initialViewState, showLoading } from "../store/View";
