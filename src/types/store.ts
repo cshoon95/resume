@@ -8,7 +8,7 @@ export type StoreStateDataType = {
 export type StoreStateViewType = {
     showAlertMessage: string;
     showAlertOptions: ShowAlertOptionType;
-    showLoadingName: string;
+    showLoadingType: string;
     showLoadingOptions: ShowLodingOptionType;
 };
 

@@ -15,6 +15,15 @@ export const showAlert = createAction<{
 
 export const hideAlert = createAction(HIDE_LOADING);
 
+export const showLoading = createAction<{
+    loadingType: string,
+    loadingOptions?: ShowLodingOptionType
+}>(SHOW_LOADING)
+
+export const hideLoading = createAction<{
+    loadingType?: string
+}>(HIDE_LOADING)
+
 // state
 const initAlertOptions: ShowAlertOptionType = {    
     title: '',
@@ -34,7 +43,7 @@ const initLoadingOptions: ShowLodingOptionType = {
 export const initialViewState: StoreStateViewType = {
     showAlertMessage: "",
     showAlertOptions: initAlertOptions,
-    showLoadingName: "",
+    showLoadingType: "",
     showLoadingOptions: initLoadingOptions
 }
 
@@ -73,13 +82,13 @@ const viewReducer = (state = initialViewState, action:{
             }
             return {
                 ...state,
-                showLoadingName: action.payload.loadingName,
+                showLoadingType: action.payload.loadingType,
                 showLoadingOptions: loadingOptions
             }
         case HIDE_LOADING:
             return {
                 ...state,
-                showLoadingName: '',
+                showLoadingType: '',
                 showLoadingOptions: null
             }
         default:

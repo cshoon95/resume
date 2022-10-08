@@ -1,7 +1,7 @@
 import { Store } from "redux";
 import { initialDataState, setState } from "../store/Data";
 import { hideAlert, showAlert, initialViewState, showLoading } from "../store/View";
-import { StoreStateType } from "../types/store";
+import { StoreStateType, ShowAlertOptionType, ShowLodingOptionType } from "../types/store";
 
 type StateType = keyof typeof initialDataState | keyof typeof initialViewState;
 
@@ -34,6 +34,26 @@ export class Ons {
             {[key]: value}
         ));
     }
+
+    public alert(message: string, options?: ShowAlertOptionType) {
+        if (message === 'hide') {
+            this.store.dispatch(hideAlert());
+        } else {
+            this.store.dispatch(showAlert({
+                message,
+                alertOptions: options
+            }))
+        }
+    }
+
+    public showLoading(type: string, options?: ShowLodingOptionType) {
+        this.store.dispatch(showLoading({
+            loadingType: type,
+            loadingOptions: options
+        }))
+    }
 }
 
-export default (window as any).devons = new Ons();
+(window as any).devons = new Ons();
+
+export default new Ons();
