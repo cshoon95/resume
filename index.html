@@ -240,7 +240,7 @@
         if (!flag) {
             $('#my_star').append('<iframe width="77%" height="480" src="https://www.youtube.com/embed/TWA9alBCoOc?si=0uP9NhBUkRzSqa-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
         } else {
-            $('#my_star').remove();
+            $('#my_star').children().remove()
         }
 
         flag = !flag;
