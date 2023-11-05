@@ -154,7 +154,7 @@
                     <!-- End .project-info -->
                 </div>
 
-                <div id="my-star" style="margin-bottom: 25px; display: none;">         
+                <div id="my_star" style="margin-bottom: 25px;">         
 
                 </div>
 
@@ -238,9 +238,9 @@
 
     $('#mystar_btn').on('click',function() {
         if (!flag) {
-            $('#my-star').append(<iframe width="77%" height="480" src="https://www.youtube.com/embed/TWA9alBCoOc?si=0uP9NhBUkRzSqa-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>);
+            $('#my_star').append('<iframe width="77%" height="480" src="https://www.youtube.com/embed/TWA9alBCoOc?si=0uP9NhBUkRzSqa-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
         } else {
-            $('#my-star').remove();
+            $('#my_star').remove();
         }
 
         flag = !flag;
