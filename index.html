@@ -236,8 +236,8 @@
 </html>
 
 <script>
-    document.querySelector('#mystar_btn').addEventListener('click', () => {
-        if ($('#iframe').isVisible()) {
+    $('#mystar_btn').on('click',function() {
+        if ($('#iframe').length > 0) {
             $('#iframe').hide();
         } else {
             $('#iframe').show();
