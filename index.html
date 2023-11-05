@@ -149,12 +149,12 @@
                             TypeScript, React, Redux, React-Query, Recoil, Node.js, EC2, RDBS(MySql) <br/>
                             (Redux ➡️ React-Query & Recoil 마이그레이션)
                         </p>
-                        <a id="mystar_btn" href="#my-star" target="_blank">View Project</a>
+                        <a id="mystar_btn" href="#projects">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
 
-                <div id="my-star" style="margin: 25px;">                   
+                <div id="my-star" style="margin: 25px; display: none;">                   
                     <iframe width="900" height="480" src="https://www.youtube.com/embed/jA1Tr4PpHrI?si=IBEzcPReXH8azxAV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
 
@@ -235,10 +235,8 @@
 
 <script>
     let flag = false;
-    $('#youtube_view').hide();
-
     $('#mystar_btn').on('click',function() {
-        flag ? $('#youtube_view').hide() : $('#youtube_view').show();
         flag = !flag;
+        flag ? $('#youtube_view').hide() : $('#youtube_view').show();
     })
 </script>
