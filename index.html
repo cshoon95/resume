@@ -234,13 +234,11 @@
 </html>
 
 <script>
+    const flag = false;
     $('#youtube_view').hide();
 
     $('#mystar_btn').on('click',function() {
-        if ($('#youtube_view').length > 0) {
-            $('#youtube_view').hide();
-        } else {
-            $('#youtube_view').show();
-        }
+        flag ? $('#youtube_view').hide() : $('#youtube_view').show();
+        flag = !flag;
     })
 </script>
