@@ -42,6 +42,7 @@
 
         <div id="lead">
             <div id="lead-content">
+                <h2>안녕하세요!</h2>
                 <h2>끊임없이 발전하는</h2>
                 <h2>4년차 프론트 개발자 조수훈입니다.</h2>
             </div>
@@ -63,6 +64,10 @@
                 <div class="row">
                     <div class="col-md-4">
                         <h2 class="heading">About Me</h2>
+                        <div>
+                            <h4>2021.09 ~ </h4>
+                            <h4>삼성화재해상보험</h4>
+                        </div>
                     </div>
                     <div class="col-md-8">
                         <h3>사용자 경험을 생각하는 개발자</h3>
@@ -213,6 +218,7 @@
                         첫 취업 후 담당하게 된 프로젝트였습니다.
                         고객에게 MES 시스템 도입 프로젝트를 통해 업무 프로세스에 대한 심층적인 이해를 얻을 수 있었습니다. 
                         개발자로서 업무 프로세스를 이해하고 개발하는 것과 모르는 것은 너무나 다르다고 느꼈습니다.
+                        업무 프로세스를 이해하면 사용자 및 설계자의 요구사항을 명확하게 이해할 수 있다고 생각하게 되었습니다.
                     </p>
                     <ul>
                         <li>FullStack: 3명</li>
@@ -241,7 +247,7 @@
                                 주요 기능은 회원관리, 출납관리, 출석부, 시간표, 통계, 계획안, 일정, 메모 등이 있습니다. <br/>
                                 여러 학원에서 사용이 가능하도록 학원코드로 구분해서 어느 학원에서나 맞춤형 이용이 가능합니다. <br/>
                                 혼자서 풀스택 개발로 프로젝트를 진행하였고, 요구사항이 오면 계속해서 작업하면서 개선하고 있습니다. <br/>
-                                TypeScript, React, Redux, React-Query, Recoil, Node.js, EC2, RDBS(MySql) <br/>
+                                TypeScript, React, Redux, React-Query, Recoil, Node.js, EC2, S3, RDBS(MySql) <br/>
                                 (Redux ➡️ React-Query & Recoil 마이그레이션)
                             </p>
                             <a id="mystar_btn" href="#projects">View Project</a>
@@ -336,7 +342,7 @@
                     const template = '<iframe width="77%" height="480" src="https://www.youtube.com/embed/TWA9alBCoOc?si=0uP9NhBUkRzSqa-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
                     elMyStar.insertAdjacentHTML('beforeend', template);
                 } else {
-                    elMyStar.remove();
+                    elMyStar[0].remove();
                 }
             
                 flag = !flag;
