@@ -65,16 +65,16 @@
                         <h2 class="heading">About Me</h2>
                         <div>
                             <img width="80%" src="./soohoon.JPG"/>
-                            <h4>
-                                삼성화재해상보험 <br/>
+                            <h4 style="margin-top: 20%;">
+                                삼성화재해상보험(주) <br/>
                                 디지털본부 UI개발그룹 / PD(주임) <br/>
                                 Front-end Developer
                                 2021.09 ~ 재직중
                             </h4>
 
-                            <h4>
-                                더존비즈온 <br/>
-                                ERP개발그룹 MES개발부서 / 연구원(사원) <br/>
+                            <h4 style="margin-top: 10%;">
+                                (주)더존비즈온 <br/>
+                                ERP개발그룹 MES개발팀 / 연구원(사원) <br/>
                                 Full Stack Developer
                                 2020.03 ~ 2021.06
                             </h4>
@@ -355,7 +355,7 @@
                     const template = '<iframe width="77%" height="480" src="https://www.youtube.com/embed/TWA9alBCoOc?si=0uP9NhBUkRzSqa-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
                     elMyStar.insertAdjacentHTML('beforeend', template);
                 } else {
-                    elMyStar[0].remove();
+                    elMyStar.children[0].remove();
                 }
             
                 flag = !flag;
