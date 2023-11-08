@@ -5,14 +5,13 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>My Portfolio</title>
+        <title>이력서 - 조수훈</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
         <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
-        <script src="./index.js"></script>
     </head>
 
     <body>
@@ -29,7 +28,7 @@
                     <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#experience">Experience</a>
+                    <a href="#experience">Work Experience</a>
                 </li>
                 <li>
                     <a href="#projects">Project</a>
@@ -101,18 +100,22 @@
         <!-- End #about -->
 
         <div id="experience" class="background-alt">
-            <h2 class="heading">Experience</h2>
+            <h2 class="heading">Work Experience</h2>
             <div id="experience-timeline">
-                <div data-date="Since September 2021">
-                    <h3>삼성화재해상보험</h3>
-                    <h4>﹒Front-End Developer</h4>
+                <div data-date="2022.03 ~ 2022.07">
+                    <h3>삼성화재해상보험 (Front-End Developer)</h3>
+                    <h4>﹒해외여행자 보험 개발</h4>
+                    <p>인천공항 내부에서 운영되는 해외여행자 보험을 판매하는 웹 애플리케이션을 개발했습니다. 프론트엔드 부분은 수석 개발자님과 제가 맡아 진행하였습니다. 
+                        부서에서 React를 처음 도입한 프로젝트입니다. 개발하면서 느낀 점은 개발 표준이 중요하며, 
+                        개발자 간 의사소통 및 협업을 위한 명확한 규칙을 설정하는 것이 프로젝트의 성패에 큰 영향을 미친다는 점을 깨달았고 그 결과 성공적으로 프로젝트를 마무리할 수 있었습니다.
+                        그리고, 공통 컴포넌트들과 컨트롤 등을 개발하면서 코드 재사용성을 높였습니다. 이로써 유지보수가 간편해지고 시간을 절약할 수 있었습니다.
+                    </p>
+                    <br/>
                     <ul>
-                        <li>자동차﹒오토바이﹒해외여행자﹒운전자﹒마일리지 운전자 보험 개발</li>
-                        <li>리뉴얼 이벤트 프로세스 개발</li>
-                        <li>공통 컴포넌트, 컨트롤 개발(얼럿, 로딩바, 드롭다운, 라디오 등)</li>
-                        <li>고과 우수로 조기 진급</li>
-                        <li>jQuery Validation Library ➡️ Vanila JS로 마이그레이션하며 커스터마이징</li>
-                        <li>React, Redux, TypeScript, Javascript</li>
+                        <li>초기 개발부터 참여하여 React & Typescript 개발 표준 구축 및 개발 운영</li>
+                        <li>공통 컴포넌트 개발(페이지 템플릿, 얼럿, 로딩바, 모달, 컨트롤 등)</li>
+                        <li>역할에 따라 페이지를 구분하여 개발(결제페이지, 청약페이지, 유저정보, 외국인 가입자, 계약자 변경 등 개발)</li>
+                        <li>TypeScript, React, Redux, Storybook</li>
                     </ul>
                 </div>
 
@@ -186,16 +189,18 @@
             <ul>
                 <li>JavaScript</li>
                 <li>TypeScript</li>
+                <li>Next.js</li>
                 <li>React</li>
                 <li>Redux</li>
                 <li>React-Query</li>
                 <li>Recoil</li>
-                <li>Storybook</li>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Node.js</li>
                 <li>MySql</li>
                 <li>Oracle</li>
+                <li>Yarn Berry</li>
+                <li>Git</li>
             </ul>
         </div>
         <!-- End #skills -->
@@ -230,6 +235,21 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/scripts.min.js"></script>
-    </body>
+        <script>
+            let flag = false;
 
+            document.querySelector('#mystar_btn').addEventListener('click', () => {
+                const elMyStar = document.querySelector('#my_star');
+                
+                if (!flag) {
+                    const template = '<iframe width="77%" height="480" src="https://www.youtube.com/embed/TWA9alBCoOc?si=0uP9NhBUkRzSqa-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+                    elMyStar.insertAdjacentHTML('beforeend', template);
+                } else {
+                    elMyStar.removeChild();
+                }
+            
+                flag = !flag;
+            })
+        </script>
+    </body>
 </html>
