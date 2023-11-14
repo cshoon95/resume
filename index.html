@@ -31,7 +31,7 @@
                     <a href="#experience">Experience</a>
                 </li>
                 <li>
-                    <a href="#projects">Side Projects</a>
+                    <a href="#projects">Side Project</a>
                 </li>
                 <li>
                     <a href="#skills">Skills</a>
@@ -250,7 +250,7 @@
         <!-- End #experience -->
 
         <div id="projects" class="background-alt">
-            <h2 class="heading">Side Projects</h2>
+            <h2 class="heading">Side Project</h2>
             <div class="container">
                 <div class="row">
                     <div class="project shadow-large">
@@ -266,21 +266,21 @@
                                 - 학원코드를 구분해서 어느 학원에서나 맞춤형 이용이 가능 <br/>
                                 - 혼자서 풀스택 개발로 프로젝트를 진행 / 추가하면 좋을 기능을 찾거나 요구사항을 듣고 유지보수중 <br/>
                                 - TypeScript, React, Recoil, React-Query, Redux, Node.js, EC2, S3, RDBS(MySql) <br/>
-                                - (Redux ➡️ React-Query & Recoil 마이그레이션)
+                                - (Redux ➡️ React-Query & Recoil 마이그레이션) <br/>
                                 - 현재는 Next JS로 리뉴얼 작업중
                             </p>
-                            <a id="mystar_btn" href="#projects">View Project</a>
+                            <!-- <a id="mystar_btn" href="#projects">View Project</a> -->
                         </div>
                         <!-- End .project-info -->
                     </div>
 
-                    <div id="my_star" style="margin-bottom: 25px;">         
+                    <!-- <div id="my_star" style="margin-bottom: 25px;">          -->
                         <!-- Youtube -->
-                    </div>
+                    <!-- </div> -->
 
                     <!--  -->
                     <div class="project shadow-large">
-                        <iframe width="77%" height="480" src="https://www.youtube.com/embed/TWA9alBCoOc?si=0uP9NhBUkRzSqa-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="100%" height="450" src="https://www.youtube.com/embed/TWA9alBCoOc?si=0uP9NhBUkRzSqa-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                     <!-- End .project -->
                 </div>
@@ -340,20 +340,20 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/scripts.min.js"></script>
         <script>
-            let flag = false;
+            // let flag = false;
 
-            document.querySelector('#mystar_btn').addEventListener('click', () => {
-                const elMyStar = document.querySelector('#my_star');
+            // document.querySelector('#mystar_btn').addEventListener('click', () => {
+            //     const elMyStar = document.querySelector('#my_star');
                 
-                if (!flag) {
-                    const template = '<iframe width="77%" height="480" src="https://www.youtube.com/embed/TWA9alBCoOc?si=0uP9NhBUkRzSqa-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-                    elMyStar.insertAdjacentHTML('beforeend', template);
-                } else {
-                    elMyStar.children[0].remove();
-                }
+            //     if (!flag) {
+            //         const template = '<iframe width="77%" height="480" src="https://www.youtube.com/embed/TWA9alBCoOc?si=0uP9NhBUkRzSqa-r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            //         elMyStar.insertAdjacentHTML('beforeend', template);
+            //     } else {
+            //         elMyStar.children[0].remove();
+            //     }
             
-                flag = !flag;
-            })
+            //     flag = !flag;
+            // })
         </script>
     </body>
 </html>
