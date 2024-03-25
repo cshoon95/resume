@@ -5,10 +5,19 @@ const input = fs.readFileSync(path)
   .trim()
   .split('\n')
 
-const date = new Date();
-const y = date.getFullYear();
-const m = date.getMonth().toString().length === 1 ? '0' + Number(date.getMonth() + 1) : date.getMonth() + 1;
-const d = date.getDate();
+let resX = [];
+let resY = [];
 
+for (let i = 0; i < input.length; i++) {
+  const [a, b] = input[i].split(' ');
 
-console.log(y + '-' + m + '-' + d)
+  if (!resX.includes(a)) {
+    resX.push(a);
+  }
+
+  if (!resY.includes(b)) {
+    resY.push(b);
+  }
+}
+
+console.log(resX, resY)
