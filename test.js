@@ -7,6 +7,7 @@ const input = fs.readFileSync(path)
 
 let resX = [];
 let resY = [];
+// let resY = [];
 
 for (let i = 0; i < input.length; i++) {
   const [a, b] = input[i].split(' ');
